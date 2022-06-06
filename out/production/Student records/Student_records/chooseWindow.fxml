@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: moccasin;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Student_records.chooseWindowController">
+    <children>
+        <Button layoutX="55.0" layoutY="200.0" mnemonicParsing="false" onAction="#updateStudents" prefHeight="78.0" prefWidth="117.0">
+            <graphic>
+                <ImageView fitHeight="70.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@/images/student.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button layoutX="429.0" layoutY="200.0" mnemonicParsing="false" onAction="#updateRecords" prefHeight="78.0" prefWidth="117.0">
+            <graphic>
+                <ImageView fitHeight="70.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@/images/records.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button layoutX="243.0" layoutY="200.0" mnemonicParsing="false" onAction="#updateCourses" prefHeight="78.0" prefWidth="117.0">
+            <graphic>
+                <ImageView fitHeight="70.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@/images/course.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button layoutX="507.0" layoutY="351.0" mnemonicParsing="false" onAction="#backBtn" prefHeight="36.0" prefWidth="78.0">
+            <graphic>
+                <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <ImageView fitHeight="23.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@/images/backicon.png">
+                            </Image>
+                        </ImageView>
+                        <Label prefHeight="17.0" prefWidth="43.0" text="Takaisin" />
+                    </children>
+                </HBox>
+            </graphic>
+        </Button>
+
+        <Label layoutX="84.0" layoutY="304.0" text="Opiskelijat">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="282.0" layoutY="304.0" text="Kurssit">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="455.0" layoutY="304.0" text="Suoritukset">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="146.0" layoutY="23.0" prefHeight="123.0" prefWidth="308.0" text="Etsi, muokkaa tai poista tietoja" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font name="System Bold" size="35.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

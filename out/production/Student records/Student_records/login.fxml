@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightslategrey;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Student_records.loginController">
+    <children>
+        <Button fx:id="loginBtn" layoutX="242.0" layoutY="200.0" mnemonicParsing="false" onAction="#login" prefHeight="46.0" prefWidth="116.0">
+         <graphic>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="38.0" prefWidth="76.0" text="Kirjaudu">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <ImageView fitHeight="39.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                      <Image url="@/images/loginIcon.png">
+                      </Image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </graphic></Button>
+        <Button fx:id="exitBtn" layoutX="242.0" layoutY="289.0" mnemonicParsing="false" onAction="#exit" prefHeight="46.0" prefWidth="116.0">
+         <graphic>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="39.0" prefWidth="63.0" text="Poistu">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <ImageView fitHeight="39.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                      <Image url="@/images/exitIcon.png">
+                      </Image>
+                  </ImageView>
+               </children></HBox>
+         </graphic></Button>
+        <ImageView fitHeight="137.0" fitWidth="158.0" layoutX="229.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@/images/studenthat.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="218.0" layoutY="14.0" text="Opintorekisteri" textFill="WHITE">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+
+
+    </children>
+</AnchorPane>

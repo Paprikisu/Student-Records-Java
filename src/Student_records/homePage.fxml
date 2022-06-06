@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="665.0" prefWidth="878.0" style="-fx-background-color: moccasin;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Student_records.homePageController">
+    <children>
+        <AnchorPane layoutX="305.0" layoutY="48.0" />
+        <ImageView fx:id="greenPlus" fitHeight="79.0" fitWidth="77.0" layoutX="39.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@/images/greenplus.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="125.0" layoutY="256.0" text="Lisää opiskelija">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="signOutBtn" fitHeight="46.0" fitWidth="60.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#SignOut" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@/images/SignOutBtn.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="bluePlus" fitHeight="79.0" fitWidth="90.0" layoutX="38.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@/images/blueplus.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="redPlus" fitHeight="77.0" fitWidth="79.0" layoutX="39.0" layoutY="501.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@/images/redplus.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="125.0" layoutY="400.0" prefHeight="17.0" prefWidth="79.0" text="Lisää kurssi">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="125.0" layoutY="530.0" text="Lisää suoritus">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="113.0" fitWidth="151.0" layoutX="667.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@/images/gears.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="685.0" layoutY="478.0" prefHeight="46.0" prefWidth="111.0" text="Etsi, muokkaa tai poista tietoja" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="79.0" fitWidth="90.0" layoutX="312.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@/images/student.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="77.0" layoutX="306.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@/images/course.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="108.0" layoutX="304.0" layoutY="497.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@/images/records.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="395.0" layoutY="255.0" text="Näytä opiskelijat">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="396.0" layoutY="397.0" text="Näytä kurssit">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="392.0" layoutY="529.0" text="Näytä suoritukset">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label contentDisplay="TOP" layoutX="305.0" layoutY="14.0" prefHeight="146.0" prefWidth="292.0" text="Opintorekisterin hallintapaneeli" wrapText="true">
+            <font>
+                <Font name="System Italic" size="36.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="60.0" prefHeight="46.0" prefWidth="46.0" text="Kirjaudu ulos" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="49.0" layoutY="239.0" mnemonicParsing="false" onAction="#addStudent" opacity="0.0" prefHeight="54.0" prefWidth="176.0" />
+      <Button layoutX="49.0" layoutY="382.0" mnemonicParsing="false" onAction="#addCourse" opacity="0.0" prefHeight="54.0" prefWidth="153.0" />
+      <Button layoutX="49.0" layoutY="513.0" mnemonicParsing="false" onAction="#addRecord" opacity="0.0" prefHeight="54.0" prefWidth="168.0" />
+      <Button layoutX="308.0" layoutY="228.0" mnemonicParsing="false" onAction="#showStudents" opacity="0.0" prefHeight="77.0" prefWidth="199.0" />
+      <Button layoutX="302.0" layoutY="369.0" mnemonicParsing="false" onAction="#showCourses" opacity="0.0" prefHeight="77.0" prefWidth="182.0" />
+      <Button layoutX="317.0" layoutY="498.0" mnemonicParsing="false" onAction="#showRecords" opacity="0.0" prefHeight="80.0" prefWidth="192.0" />
+      <Button layoutX="667.0" layoutY="348.0" mnemonicParsing="false" onAction="#updateInfo" opacity="0.0" prefHeight="172.0" prefWidth="147.0" />
+
+    </children>
+</AnchorPane>
